@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.repositories.UserRepository;
 
-@Service // Registra a classe como um componente do spring
+@Service
 public class UserService {
 	
 	@Autowired
 	private UserRepository repository;
 	
-	//Método que retorna todos os usuarios do banco de dados
+
 	public List<User> findAll(){
 		return repository.findAll();
 	}
